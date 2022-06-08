@@ -20,6 +20,11 @@ export default new Router({
           component: () => import("@/views/HomeMyFeed")
         },
         {
+          path: "my-feed-history",
+          name: "home-my-feed-history",
+          component: () => import("@/views/HomeMyFeedHistory")
+        },
+        {
           path: "tag/:tag",
           name: "home-tag",
           component: () => import("@/views/HomeTag")

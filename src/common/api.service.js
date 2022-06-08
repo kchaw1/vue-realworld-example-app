@@ -104,3 +104,9 @@ export const FavoriteService = {
     return ApiService.delete(`articles/${slug}/favorite`);
   }
 };
+
+export const HistoryService = {
+  query(params) {
+    return ApiService.query("history", { params: params });
+  }
+};
