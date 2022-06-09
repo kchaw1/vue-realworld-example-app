@@ -18,13 +18,18 @@
     </div>
     <h2 v-text="history.title" />
     <div v-text="history.description" />
-    <div
-      v-text="history.body"
-      :title="history.body"
-      style="font-size: 0.8rem; overflow: hidden; text-overflow: ellipsis; white-space:now-rap;"
-    />
+    <div class="history-body" v-text="history.body" :title="history.body" />
   </div>
 </template>
+
+<style scoped>
+.history-body {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+</style>
 
 <script>
 export default {
